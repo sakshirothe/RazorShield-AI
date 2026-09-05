@@ -161,26 +161,5 @@ Access the application at `http://localhost:8000`.
 Execute the full test suite verifying features, inference bounds, cost engines, and API overrides:
 ```bash
 pytest -v
-```
-
----
-
-## 8. 3-Minute Buildathon Presentation Flow
-1. **Dashboard Overview**: Showcase aggregate KPI telemetry, prevented RTO losses (₹), and risk distribution across payment methods.
-2. **Preset Scenario Selection**: Use the top-nav demo selector to choose **Scenario 3 (High-Risk Multi-Account RTO)**.
-3. **Analyze & Explain**: Click **Evaluate Risk**. Highlight the calibrated score (86/100), Tree SHAP positive risk drivers (COD, device reuse, pincode risk), and the economic ROI calculus.
-4. **Agent Narrative**: Read the grounded, non-hallucinatory AI Risk Manager assessment card.
-5. **What-If Sensitivity**: Navigate to the **What-If Simulator**, switch payment from COD to UPI and reduce past returns to 0 $\rightarrow$ observe real-time risk drop to LOW.
-6. **Human Override**: Open the **Review Queue**, click **Review / Override** on a flagged transaction, select **Approve**, enter reason *"Customer verified identity via phone call"*, and submit.
-7. **Audit Log & Model Health**: Navigate to **Audit Trail** to show the recorded human override, then open **Model Health** to display genuine held-out test ROC-AUC (0.8925) and threshold tradeoffs.
-
----
-
-## 9. Disclaimers & Ethics
-- **Defensive Purpose**: RazorShield is strictly designed to protect merchants against operational losses and delivery fraud. It contains zero offensive or evasion capabilities.
-- **Synthetic Data**: All transaction records are synthetically generated using statistical distributions and fixed seeds for reproducibility. No proprietary customer or Razorpay internal data is used or claimed.
-- **Financial Estimates**: Cost savings and ROI calculations are derived using configurable business parameters and clearly marked as estimates.
-
----
 
 *Built with ❤️ for the Razorpay AI Buildathon.*
